@@ -20,3 +20,16 @@ it('Test Sauce Demo Sauce labs product backpack', () => {
     loginPage.assertLogin()
     dashboardPage.sauceLabsBackpack() 
 })
+
+it('Test add product Sauce Labs Backpack to cart', () => {
+    loginPage.login(URL,'standard_user','secret_sauce')
+    loginPage.assertLogin()
+    dashboardPage.sauceLabsBackpack()
+    dashboardPage.addSauceLabsBackpacktoCart() 
+})
+
+it('Test logout', () => {
+    loginPage.login(URL,'standard_user','secret_sauce')
+    loginPage.assertLogin()
+    dashboardPage.logout()
+})
