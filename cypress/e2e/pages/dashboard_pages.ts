@@ -45,11 +45,6 @@ export class DashboardPage{
         cy.get(this.btn_finish).click()
     }
 
-    // SauceLabsBackpack(){
-    //     cy.get(this.link_SauceLabsBackpack).click()
-    //     cy.contains('Sauce Labs Backpack').should('be.visible')
-    // }
-
     add_SauceLabsBackpack_toCart(){
         cy.get(this.link_SauceLabsBackpack).should('be.visible')
         cy.get('#add-to-cart-sauce-labs-backpack').should('be.visible')
