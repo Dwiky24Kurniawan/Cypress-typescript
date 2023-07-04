@@ -14,6 +14,8 @@ export default defineConfig({
     },
   },
   e2e: {
+    baseUrl: 'https://www.saucedemo.com',
+    specPattern: "cypress/e2e/specs",
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
