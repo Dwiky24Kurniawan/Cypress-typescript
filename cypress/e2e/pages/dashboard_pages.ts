@@ -98,13 +98,4 @@ export class DashboardPage{
         cy.get('div[class="summary_info"]').should('exist')
         cy.get('div[class="summary_info"]').should('be.visible')
     }
-
-    logout(){
-        cy.contains(this.link_SauceLabsBackpack).click()
-        cy.contains('Sauce Labs Backpack').should('be.visible')
-        cy.get('#menu_button_container > div > div:nth-child(1) > div').should('be.visible')
-        cy.get('#menu_button_container > div > div:nth-child(1) > div').click()
-        cy.get('#logout_sidebar_link').should('be.visible')
-        cy.get('#logout_sidebar_link').click()
-    }
 }
