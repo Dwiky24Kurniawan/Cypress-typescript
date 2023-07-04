@@ -9,7 +9,7 @@ const URL = 'https://www.saucedemo.com'
 //         cy.login('standard_user', 'secret_sauce');
 //     })
 
-describe('Test add cart kasirAja', () => {
+describe('Test add cart Sauce Demo', () => {
     it('Open Sauce labs product backpack page', () => {
         loginPage.login(URL, 'standard_user', 'secret_sauce')
         loginPage.assertLogin()

@@ -5,7 +5,7 @@ let loginPage = new LoginPage()
 let dashboardPage = new DashboardPage()
 const URL = 'https://www.saucedemo.com'
 
-describe('Test Login kasirAja', () => {
+describe('Test Login Sauce Demo', () => {
     it('success login with valid credential', () => {
         loginPage.login(URL, 'standard_user', 'secret_sauce')
         loginPage.assertLogin()
@@ -15,12 +15,4 @@ describe('Test Login kasirAja', () => {
         loginPage.login(URL, 'standard_user', 'invalidPass')
         loginPage.assertLoginFail()
     })
-})
-
-
-
-it('Test logout', () => {
-    loginPage.login(URL, 'standard_user', 'secret_sauce')
-    loginPage.assertLogin()
-    dashboardPage.logout()
 })

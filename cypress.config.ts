@@ -2,17 +2,20 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   chromeWebSecurity: false,
-  reporter: "mochawesome",
+  reporter: "cypress-mochawesome-reporter",
   reporterOptions: {
-    chart: true,
-    overwrite: false,
-    html: false,
-    json: true,
-    reportDir: "cypress/reports",
+    reporterEnabled: 'cypress-mochawesome-reporter, mocha-junit-reporter',
+    mochaJunitReporterReporterOptions: {
+      mochaFile: 'cypress/reports/junit/results-[hash].xml',
+    },
+    cypressMochawesomeReporterReporterOptions: {
+      charts: true,
+      reportPageTitle: 'Report TA Task 1 - Sauce Demo',
+    },
   },
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });
