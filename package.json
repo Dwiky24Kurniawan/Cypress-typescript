@@ -4,8 +4,8 @@
   "description": "Cypress project",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --browser chrome",
-    "openTest": "npx cypress open"
+    "cypress:open": "cypress open",
+    "test": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "Dwiky Kurniawan",
