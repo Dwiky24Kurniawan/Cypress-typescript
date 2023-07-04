@@ -20,3 +20,5 @@ npx cypress open
 ```
 
 ### Thanks
+
+Link test case and recorded running program : https://drive.google.com/drive/u/0/folders/1SgH6lzLX4UAMWpq_ZbaelFtem74EXQcA
