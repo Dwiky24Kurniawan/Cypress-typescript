@@ -12,5 +12,7 @@ describe('Test Suite Sauce Demo - Add Product to Cart', () => {
         dashboardPage.add_SauceLabsBikeLight_toCart()
         dashboardPage.add_SauceLabsBoltTShirt_toCart()
         dashboardPage.assert_addedToCart()
+        dashboardPage.openCart()
+        dashboardPage.assert_openCart()
     })
 })

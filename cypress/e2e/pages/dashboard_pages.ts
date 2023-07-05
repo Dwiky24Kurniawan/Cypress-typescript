@@ -11,16 +11,6 @@ export class DashboardPage{
     btn_continue = '#continue'
     btn_finish = '#finish'
 
-    openCart(){
-        cy.get(this.link_Cart).click()
-    }
-
-    assert_openCart(){
-        cy.get('div[class="cart_list"]').should('exist')
-        cy.get('div[class="cart_list"]').should('be.visible')
-        cy.get(this.btn_checkout).should('be.visible')
-    }
-
     inputFirstname(firstname: string){
         cy.get(this.txt_fisrtname).type(firstname)
     }
@@ -77,6 +67,16 @@ export class DashboardPage{
         cy.get(this.link_Cart).click()
     }
 
+    openCart(){
+        cy.get(this.link_Cart).click()
+    }
+
+    assert_openCart(){
+        cy.get('div[class="cart_list"]').should('exist')
+        cy.get('div[class="cart_list"]').should('be.visible')
+        cy.get(this.btn_checkout).should('be.visible')
+    }
+
     formCheckout(firstname : string, lastname : string, postalcode : string){
         this.inputFirstname(firstname)
         this.inputLastname(lastname)
@@ -92,5 +92,9 @@ export class DashboardPage{
         cy.get('div[class="cart_list"]').should('be.visible')
         cy.get('div[class="summary_info"]').should('exist')
         cy.get('div[class="summary_info"]').should('be.visible')
+    }
+
+    assert_finishCheckout(){
+        cy.get('.complete-header').should('have.text','Thank you for your order!')
     }
 }

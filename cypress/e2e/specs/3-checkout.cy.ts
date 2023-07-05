@@ -16,6 +16,7 @@ describe('Test Suite Sauce Demo - Checkout', () => {
         dashboardPage.clickContinue()
         dashboardPage.assert_Checkout_Overview()
         dashboardPage.clickFinish()
+        dashboardPage.assert_finishCheckout()
     })
 
     it('TC_005 - Negative Test - Checkout', () => {
