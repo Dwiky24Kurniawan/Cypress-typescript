@@ -21,4 +21,4 @@ npx cypress open
 
 ### Thanks
 
-Link test case and recorded running program : https://drive.google.com/drive/u/0/folders/1SgH6lzLX4UAMWpq_ZbaelFtem74EXQcA
+Link test case and recorded running program : https://drive.google.com/file/d/1EgGR1SmY_DbHkVruuQOnFmCc_BwoR2Ys/view?usp=drivesdk
