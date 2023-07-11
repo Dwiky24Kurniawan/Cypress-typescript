@@ -22,11 +22,16 @@ open cypress dashboard
 ```bash
 npx cypress open
 ```
-or custome scripts on package.json
+or custom scripts on package.json
 ```bash
 npm run cypress:open
 ```
 
+open report
+```bash
+start cypress\reports\html\index.html
+```
+
 ### Thanks
 
-Link screen recording of running program : https://drive.google.com/file/d/18ZyRQryKUreTbqebhy-9EOm4ZkAbPLSl/view?usp=sharing
+Link screen recording of running program : https://drive.google.com/file/d/15eIlLh_7TtNqO_kOBmrFYF4v_HbJPiGA/view?usp=sharing
