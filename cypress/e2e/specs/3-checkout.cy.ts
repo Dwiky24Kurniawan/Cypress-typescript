@@ -9,6 +9,10 @@ describe('Test Suite Sauce Demo - Checkout', () => {
     it('TC_004 - Positive Test - Checkout', () => {
         loginPage.login(URL, 'standard_user', 'secret_sauce')
         loginPage.assertLogin()
+        dashboardPage.add_SauceLabsBackpack_toCart()
+        dashboardPage.add_SauceLabsBikeLight_toCart()
+        dashboardPage.add_SauceLabsBoltTShirt_toCart()
+        dashboardPage.assert_addedToCart()
         dashboardPage.openCart()
         dashboardPage.assert_openCart()
         dashboardPage.clickCheckout()
@@ -22,6 +26,10 @@ describe('Test Suite Sauce Demo - Checkout', () => {
     it('TC_005 - Negative Test - Checkout', () => {
         loginPage.login(URL, 'standard_user', 'secret_sauce')
         loginPage.assertLogin()
+        dashboardPage.add_SauceLabsBackpack_toCart()
+        dashboardPage.add_SauceLabsBikeLight_toCart()
+        dashboardPage.add_SauceLabsBoltTShirt_toCart()
+        dashboardPage.assert_addedToCart()
         dashboardPage.openCart()
         dashboardPage.assert_openCart()
         dashboardPage.clickCheckout()

@@ -9,16 +9,24 @@ This automation is written in TypeScript (a strict syntactical superset of JavaS
 npm install
 ```
 
-run cypress
+run cypress and create report automatically
 ```bash
 npx cypress run
+```
+or custom scripts on package.json
+```bash
+npm run test
 ```
 
 open cypress dashboard
 ```bash
 npx cypress open
 ```
+or custome scripts on package.json
+```bash
+npm run cypress:open
+```
 
 ### Thanks
 
-Link screen recording of running program : https://drive.google.com/file/d/1EgGR1SmY_DbHkVruuQOnFmCc_BwoR2Ys/view?usp=drivesdk
+Link screen recording of running program : https://drive.google.com/file/d/18ZyRQryKUreTbqebhy-9EOm4ZkAbPLSl/view?usp=sharing
