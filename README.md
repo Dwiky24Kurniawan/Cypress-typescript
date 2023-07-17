@@ -13,7 +13,7 @@ run cypress and create report automatically
 ```bash
 npx cypress run
 ```
-or custom scripts on package.json
+or use custom scripts on package.json to run cypress and create report automatically
 ```bash
 npm run test
 ```
@@ -22,7 +22,7 @@ open cypress dashboard
 ```bash
 npx cypress open
 ```
-or custom scripts on package.json
+or use custom scripts on package.json to open cypress dashboard
 ```bash
 npm run cypress:open
 ```
