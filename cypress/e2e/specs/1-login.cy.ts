@@ -1,4 +1,4 @@
-import { LoginPage } from "../pages/login_pages"
+import { LoginPage } from "../POM/login_pages"
 
 let loginPage = new LoginPage()
 const URL = 'https://www.saucedemo.com'
